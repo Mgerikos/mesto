@@ -1,0 +1,44 @@
+.profile__edit-btn {
+  background-image: url(../../../images/edit-vector.svg);
+  width: 24px;
+  height: 24px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 37px;
+  margin-left: 17px;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  overflow: hidden;
+  border: 1px solid #FFFFFF;
+
+}
+
+.profile__edit-btn:hover {
+    opacity: 0.6;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .profile__edit-btn {
+    margin: 0;
+    left: 114px;
+    bottom: 80px;
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__edit-btn {
+    bottom: 75px;
+  }
+}
+
+
+
+

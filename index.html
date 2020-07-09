@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mesto</title>
+  </head>
+  <body class="page">
+      <header class="header">
+         <img class="header__logo" src="./images/Vector.png" alt="логотип">
+      </header>
+
+      <main>
+
+        <section class="profile">
+          <img class="profile__avatar" src="./images/jan.jpg" alt="аватарка">
+          <div class="profile__info">
+              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <p class="profile__job">Исследователь океана</p>
+          </div>
+          <button class="profile__edit-btn" value="edit-btn" type="button"></button>
+          <button class="profile__add-btn" value="add-btn" type="button"></button>
+       </section>
+
+       <section class="cards">
+
+        <div class="cards__element">
+          <img class="cards__img" src="./images/hot springs 300 oregon USA-min.jpg" alt="отдых в кайфовой обстановке">
+          <div class="cards__container">
+            <h3 class="cards__title">США Орегона</h3>
+            <button class="cards__hearth-button" type="button" name="like"></button>
+          </div>
+        </div>
+
+        <div class="cards__element">
+          <img class="cards__img" src="./images/gora elbrus-min.png" alt="Гора Эльбрус">
+          <div class="cards__container">
+            <h3 class="cards__title">Гора Эльбрус</h3>
+            <button class="cards__hearth-button" type="button" name="like"></button>
+          </div>
+        </div>
+
+        <div class="cards__element">
+          <img class="cards__img" src="./images/dombai-min.png" alt="Домбай">
+          <div class="cards__container">
+            <h3 class="cards__title">Домабай</h3>
+            <button class="cards__hearth-button" type="button" name="like"></button>
+          </div>
+        </div>
+
+        <div class="cards__element">
+          <img class="cards__img" src="./images/kirill-pershin-1088404-unsplash-min.jpg" alt="Карачаевск">
+          <div class="cards__container">
+            <h3 class="cards__title">Карачаевск</h3>
+            <button class="cards__hearth-button" type="button" name="like"></button>
+          </div>
+        </div>
+
+        <div class="cards__element">
+          <img class="cards__img" src="./images/Tibidabo-barcelona-min.jpg" alt="Барселона">
+          <div class="cards__container">
+            <h3 class="cards__title">Барселона</h3>
+            <button class="cards__hearth-button" type="button" name="like"></button>
+          </div>
+        </div>
+
+        <div class="cards__element">
+          <img class="cards__img" src="./images/devon-hawkins-NMUtzCx0b2c-unsplash-min.jpg" alt="Канада">
+          <div class="cards__container">
+            <h3 class="cards__title">Канада</h3>
+            <button class="cards__hearth-button" type="button" name="like"></button>
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__text">© 2020 Mesto Russia</p>
+      </footer>
+
+
+      <section class="popup popup_edit-profile">
+        <div class="popup__container">
+            <button class="popup__close-icon" type="button"></button>
+            <form class="popup__form popup__form_edit-profile" name="Edit Profile">
+                <h3 class="popup__title">Редактирование профиля</h3>
+                <input class="popup__input popup__input_name"  name="Name" value="Жак-Ив Кусто" type="text">
+                <input class="popup__input popup__input_job"  name="Job" value="Исследователь океана"  type="text">
+                <button class="popup__btn popup__btn_save" type="submit" value="save-btn">Сохранить</button>
+            </form>
+        </div>
+    </section>
+
+      <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
