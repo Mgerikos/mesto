@@ -11,3 +11,10 @@
   background-repeat: no-repeat;
   border: none;
 }
+
+.cards__hearth-button:hover {
+  opacity: 0.6;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}

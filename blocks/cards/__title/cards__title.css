@@ -8,4 +8,5 @@
      text-overflow: ellipsis;
   color: #000000;
   margin: 25px 15px 31px 21px;
+  max-width: 150px;
 }

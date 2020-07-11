@@ -14,16 +14,16 @@ function popupToggle() {
       nameInput.value = userName.textContent;
       jobInput.value = userJob.textContent;
     }
-popup.classList.toggle('popup_opened');
-}
 
-function formSubmitHandler (evt) {
+    popup.classList.toggle('popup_opened');
+  }
+
+    function formSubmitHandler (evt) {
   evt.preventDefault();
     userName.textContent = nameInput.value;
     userJob.textContent = jobInput.value;
     popupToggle();
-
-}
+  }
 
 formElement.addEventListener('submit', formSubmitHandler);
 
