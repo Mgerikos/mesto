@@ -2,7 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 480px;
   margin: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -14,7 +13,7 @@
 }
 
 
-@media screen and (min-width: 426px) and (max-width: 500px) {
+/*@media screen and (min-width: 426px) and (max-width: 500px) {
   .popup__container {
       width: 380px;
   }
@@ -25,7 +24,7 @@
       max-width: 300px;
 
   }
-}
+} */
 
 
 

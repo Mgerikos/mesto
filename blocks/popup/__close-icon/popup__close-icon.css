@@ -4,7 +4,6 @@
   height: 58px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-top: 148px;
   -ms-flex-item-align: start;
       align-self: flex-start;
   background-color: transparent;
@@ -14,6 +13,9 @@
   padding: 0;
   cursor: pointer;
   overflow: hidden;
+  position: relative;
+  left: 420px;
+  top: -45px;
 }
 
 .popup__close-icon:hover {
@@ -28,10 +30,14 @@
 
 
 
-@media screen and (min-width: 425px) and (max-width: 500px) {
+
+
+@media screen and (min-width: 426px) and (max-width: 500px) {
   .popup__close-icon {
       width: 50px;
       height:50px;
+      left: 275px;
+      top: -45px;
   }
 }
 
@@ -39,9 +45,10 @@
   .popup__close-icon {
       width: 35px;
       height: 35px;
-      margin-top: 67px;
+      left: 260px;
+      top: -45px;
+   }
 
-  }
 }
 
 
