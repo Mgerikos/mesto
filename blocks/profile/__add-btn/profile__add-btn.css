@@ -31,6 +31,7 @@
   }
 }
 
+
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .profile__add-btn {
     background-image: url(../../../images/Vector+mobile.svg);

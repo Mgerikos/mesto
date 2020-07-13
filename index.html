@@ -16,11 +16,13 @@
         <section class="profile">
           <img class="profile__avatar" src="./images/jan.jpg" alt="аватарка">
           <div class="profile__info">
+            <div class="profile__caption">
               <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <button class="profile__edit-btn" value="edit-btn" type="button"></button>
+            </div>
               <p class="profile__job">Исследователь океана</p>
           </div>
-          <button class="profile__edit-btn" value="edit-btn" type="button"></button>
-          <button class="profile__add-btn" value="add-btn" type="button"></button>
+              <button class="profile__add-btn" value="add-btn" type="button"></button>
        </section>
 
        <section class="cards">
@@ -81,16 +83,14 @@
 
 
       <section class="popup popup_edit-profile">
-        <div class="popup__container">
-            <button class="popup__close-icon" type="button"></button>
             <form class="popup__form popup__form_edit-profile" name="Edit-Profile">
+                <button class="popup__close-icon" type="button"></button>
                 <h3 class="popup__title">Редактирование профиля</h3>
                 <input class="popup__input popup__input_name"  name="Name" value="Жак-Ив Кусто" type="text">
                 <input class="popup__input popup__input_job"  name="Job" value="Исследователь океана"  type="text">
                 <button class="popup__btn popup__btn_save" type="submit" value="save-btn">Сохранить</button>
             </form>
-        </div>
-    </section>
+      </section>
 
       <script src="./scripts/scripts.js"></script>
   </body>
