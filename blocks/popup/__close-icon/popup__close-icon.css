@@ -14,7 +14,7 @@
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  left: 420px;
+  left: 414px;
   top: -45px;
 }
 
@@ -45,7 +45,7 @@
   .popup__close-icon {
       width: 35px;
       height: 35px;
-      left: 260px;
+      left: 255px;
       top: -45px;
    }
 

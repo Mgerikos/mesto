@@ -9,11 +9,11 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 295px;
+  max-width: 350px;
   margin-left: 25px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   .profile__name {
       font-size: 27px;
      margin-top: 10px;

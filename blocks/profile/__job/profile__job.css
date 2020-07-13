@@ -14,7 +14,7 @@
 }
 
 
-@media screen and (min-width: 425px) and (max-width: 764px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
   .profile__job {
       font-size: 15px;
       width: 280px;
@@ -27,7 +27,7 @@
   .profile__job {
       font-size: 15px;
       margin-left: -20px;
-      margin-bottom: 35px;
+      margin-bottom: 28px;
 
   }
 }
@@ -38,7 +38,7 @@
       line-height: 17px;
       width: 280px;
       text-align: center;
-      margin-left: 7px;
+      margin: 0;
       margin-bottom: 36px;
   }
 }

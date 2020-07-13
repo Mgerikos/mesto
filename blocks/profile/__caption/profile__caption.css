@@ -1,0 +1,4 @@
+.profile__caption {
+  display: flex;
+  flex-direction: row;
+}
