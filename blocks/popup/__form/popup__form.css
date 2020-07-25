@@ -1,5 +1,4 @@
 .popup__form {
-  max-width: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,26 +6,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-
-  margin: 195px auto;
-  border-radius: 10px;
   text-align: center;
-  background-color: #ffffff;
   margin: auto;
+  background-color: white;
+  border-radius: 10px;
+
 }
+
 
 
 @media screen and (min-width: 436px) and (max-width: 500px){
   .popup__form {
    max-width: 300px;
+
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 436px) {
   .popup__form {
       max-width: 282px;
   }
 }
+
+.popup__form_add-new-card {
+
+}
+
+@media screen and (min-width: 436px) and (max-width: 500px){
+  .popup__form_add-new-card {
+   width: 430px;
+   height: 330px;
+
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 436px) {
+  .popup__form_add-new-card {
+    width: 240px;
+    height: 330px;
+  }
+}
+
+
+
+
 
 
 

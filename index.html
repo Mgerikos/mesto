@@ -11,7 +11,7 @@
          <img class="header__logo" src="./images/Vector.svg" alt="логотип">
       </header>
 
-      <main>
+      <main class="content">
 
         <section class="profile">
           <img class="profile__avatar" src="./images/jan.jpg" alt="аватарка">
@@ -27,54 +27,8 @@
 
        <section class="cards">
 
-        <div class="cards__element">
-          <img class="cards__img" src="./images/hot_springs_300oregon_USA-min.jpg" alt="отдых в кайфовой обстановке">
-          <div class="cards__container">
-            <h3 class="cards__title">США Орегона</h3>
-            <button class="cards__hearth-button" type="button" name="like"></button>
-          </div>
-        </div>
+       </section>
 
-        <div class="cards__element">
-          <img class="cards__img" src="./images/gora_elbrus-min.png" alt="Гора Эльбрус">
-          <div class="cards__container">
-            <h3 class="cards__title">Гора Эльбрус</h3>
-            <button class="cards__hearth-button" type="button" name="like"></button>
-          </div>
-        </div>
-
-        <div class="cards__element">
-          <img class="cards__img" src="./images/dombai-min.png" alt="Домбай">
-          <div class="cards__container">
-            <h3 class="cards__title">Домабай</h3>
-            <button class="cards__hearth-button" type="button" name="like"></button>
-          </div>
-        </div>
-
-        <div class="cards__element">
-          <img class="cards__img" src="./images/kirill-pershin-1088404-unsplash-min.jpg" alt="Карачаевск">
-          <div class="cards__container">
-            <h3 class="cards__title">Карачаевск</h3>
-            <button class="cards__hearth-button" type="button" name="like"></button>
-          </div>
-        </div>
-
-        <div class="cards__element">
-          <img class="cards__img" src="./images/Tibidabo-barcelona-min.jpg" alt="Барселона">
-          <div class="cards__container">
-            <h3 class="cards__title">Барселона</h3>
-            <button class="cards__hearth-button" type="button" name="like"></button>
-          </div>
-        </div>
-
-        <div class="cards__element">
-          <img class="cards__img" src="./images/devon-hawkins-NMUtzCx0b2c-unsplash-min.jpg" alt="Канада">
-          <div class="cards__container">
-            <h3 class="cards__title">Канада</h3>
-            <button class="cards__hearth-button" type="button" name="like"></button>
-          </div>
-        </div>
-      </section>
       </main>
 
       <footer class="footer">
@@ -83,14 +37,48 @@
 
 
       <section class="popup popup_edit-profile">
-            <form class="popup__form popup__form_edit-profile" name="Edit-Profile">
+            <form class="popup__form" action="#" name="profile-edit">
                 <button class="popup__close-icon" type="button"></button>
                 <h3 class="popup__title">Редактирование профиля</h3>
                 <input class="popup__input popup__input_name"  name="Name" value="Жак-Ив Кусто" type="text">
                 <input class="popup__input popup__input_job"  name="Job" value="Исследователь океана"  type="text">
-                <button class="popup__btn popup__btn_save" type="submit" value="save-btn">Сохранить</button>
+                <button class="popup__btn" value="Сохранить" type="submit">Сохранить</button>
             </form>
       </section>
+
+
+      <section class="popup popup_add-new-card">
+           <form class="popup__form popup__form_add-new-card" action="#" name="card-edit">
+              <button class="popup__close-icon popup__close-icon_add-new" type="button"></button>
+              <h3 class="popup__title">Новое место</h3>
+              <input class="popup__input popup__input_title" placeholder="Название" name="title" type="text">
+              <input class="popup__input popup__input_url" placeholder="Ссылка на картинку"  name="url" type="text">
+              <button class="popup__btn" type="submit" value="Создать">Создать</button>
+          </form>
+      </section>
+
+
+
+      <section class="popup popup__full">
+        <div class="popup__form popup__form-full">
+          <button type="button" class="popup__close-icon popup__close-icon__full-image-close"></button>
+          <img class="popup__full-image" alt="увеличенная картинка">
+          <h3 class="popup__title popup__title__full-title"></h3>
+        </div>
+      </section>
+
+
+
+      <template id="template-card">
+        <div class="cards__element">
+          <button class="cards__delete-button" type="button"></button>
+          <img class="cards__img" alt="загруженная картинка, которая может не отоброжаться из-за размера">
+          <div class="cards__container">
+            <h3 class="cards__title"></h3>
+            <button class="cards__hearth-button" type="button"></button>
+          </div>
+        </div>
+       </template>
 
       <script src="./scripts/scripts.js"></script>
   </body>

@@ -3,6 +3,13 @@
 @import url(./__form/popup__form.css);
 @import url(./__input/popup__input.css);
 @import url(./__title/popup__title.css);
+@import url(./__full-image-close/popup__close-icon__full-image-close.css);
+@import url(./__full-image/popup__full-image.css);
+@import url(./__full-title/popup__title__full-title.css);
+@import url(./__full/popup__full.css);
+@import url(./__form-full/popup__form-full.css);
+@import url(./__form/_add-new-card/popup__form_add-new-card.css);
+
 
 
 .popup {
@@ -13,5 +20,9 @@
   top: 0;
   left: 0;
   border-radius: 10px;
-  background:  rgba(0,0,0,0.5);
+  background:  rgba(0,0,0,0.9);
+
 }
+
+
+
