@@ -41,15 +41,14 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 320px) and (max-width: 426px) {
   .popup__close-icon {
       width: 35px;
       height: 35px;
-      left: 255px;
-      top: -45px;
+      left: 240px;
+      top: -40px;
    }
 
 }
-
 
 
