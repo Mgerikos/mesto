@@ -2,20 +2,16 @@
   background-image: url(../../../images/Close\ Icon.svg);
   width: 58px;
   height: 58px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  right: -45px;
+  top: -45px;
+  border: 0;
   background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  left: 414px;
-  top: -45px;
+
 }
 
 .popup__close-icon:hover {
@@ -38,6 +34,7 @@
       height:50px;
       left: 275px;
       top: -45px;
+
   }
 }
 

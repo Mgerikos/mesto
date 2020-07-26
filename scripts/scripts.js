@@ -102,6 +102,11 @@ formAddCard.addEventListener('submit', closeAddCardPopup);
 const elements = document.querySelector('.cards');
 const elementTemplate = document.querySelector('#template-card').content.querySelector('.cards__element');
 
+const elementFullImageCloseButton = document.querySelector('.popup__close-icon__full-image-close');
+const popupElementFullImage = document.querySelector('.popup__full');
+const popupElementFullImageTitle = document.querySelector('.popup__title__full-title');
+const popupElementFullImageForm = document.querySelector('.popup__full-image');
+
 function createCard(data) {
   const cardElement = elementTemplate.cloneNode(true);
 
@@ -111,15 +116,12 @@ function createCard(data) {
 
   const cardTitle = cardElement.querySelector('.cards__title');
 	const cardImage = cardElement.querySelector('.cards__img');
-	const elementFullImage = cardElement.querySelector('.cards__img');
-	const elementFullImageCloseButton = document.querySelector('.popup__close-icon__full-image-close');
-  const popupElementFullImage = document.querySelector('.popup__full');
-  const popupElementFullImageTitle = document.querySelector('.popup__title__full-title');
-	const popupElementFullImageForm = document.querySelector('.popup__full-image');
+  const elementFullImage = cardElement.querySelector('.cards__img');
 
 
 	cardTitle.textContent = data.name;
-	cardImage.src = data.link;
+  cardImage.src = data.link;
+  cardImage.alt = data.name;
 
 	cardLikeButton.addEventListener('click', function (evt) {
 		evt.target.classList.toggle('cards__hearth-button_active');
