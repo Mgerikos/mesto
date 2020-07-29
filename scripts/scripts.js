@@ -1,9 +1,5 @@
 const initialCards = [
   {
-      name: 'Looking for light',
-      link: 'https://4.downloader.disk.yandex.ru/preview/75b69ab5cedd260abb97eb8a82601eee4142ffbd86ee6fe677bc1a170fef21c0/inf/3rAgw_2G4vjOywVDq8uAi95CgFs1N8miJnsVySeM_GyCJmMwpbdZYkibncBAyXpvzAXw4VqCdpK_ijIj3xAMPQ%3D%3D?uid=1051192678&filename=first.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1051192678&tknv=v2&size=1301x656'
-  },
-  {
       name: 'Winter kiss',
       link: 'https://drscdn.500px.org/photo/244369347/m%3D900/v2?sig=e9c75222b099f8232784148240e0a050d716fd0a19460ff3254dc3e3dc27d4e9'
   },
@@ -21,7 +17,7 @@ const initialCards = [
   },
   {
     name: 'My love',
-    link: 'https://2.downloader.disk.yandex.ru/preview/31e8f7b0bf8f736bb24a311e18d7c2d32e0e10b449b60fa65ef0897a4c1eee5f/inf/H3dHZLh3A7g6ApywePKCrShGPvdqnF-3R8C7WPrSY8LH-Gp-zqmGH8bjPuwW--wxJKEZKzuANq-iC40lKWnLHg==?uid=1051192678&filename=61542196_2347251561999297_2596253613844070400_n.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&owner_uid=1051192678&size=1301x656'
+    link: 'https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/61542196_2347251561999297_2596253613844070400_n.jpg?_nc_cat=108&_nc_sid=110474&_nc_ohc=JzsYXtA4Kx0AX_5HxTn&_nc_ht=scontent-arn2-2.xx&oh=73f318efd8372a2029239f6d759744fe&oe=5F4657CF'
 },
   {
       name: 'Armenian mountains with some clothes',
