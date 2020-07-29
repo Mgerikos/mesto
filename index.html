@@ -8,19 +8,19 @@
   </head>
   <body class="page">
       <header class="header">
-         <img class="header__logo" src="./images/Vector.svg" alt="логотип">
+         <img class="header__logo" src="./images/Vector.svg" alt="logo">
       </header>
 
       <main class="content">
 
         <section class="profile">
-          <img class="profile__avatar" src="./images/jan.jpg" alt="аватарка">
+          <img class="profile__avatar" src="./images/me.jpg" alt="аватарка">
           <div class="profile__info">
             <div class="profile__caption">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <h1 class="profile__name">Mika Grig</h1>
               <button class="profile__edit-btn" value="edit-btn" type="button"></button>
             </div>
-              <p class="profile__job">Исследователь океана</p>
+              <p class="profile__job">Photographer and web-developer</p>
           </div>
               <button class="profile__add-btn" value="add-btn" type="button"></button>
        </section>
@@ -39,10 +39,10 @@
       <section class="popup popup_edit-profile">
             <form class="popup__form" action="#" name="profile-edit">
                 <button class="popup__close-icon" type="button"></button>
-                <h3 class="popup__title">Редактирование профиля</h3>
-                <input class="popup__input popup__input_name"  name="Name" value="Жак-Ив Кусто" type="text">
-                <input class="popup__input popup__input_job"  name="Job" value="Исследователь океана"  type="text">
-                <button class="popup__btn" value="Сохранить" type="submit">Сохранить</button>
+                <h3 class="popup__title">Edit Profile</h3>
+                <input class="popup__input popup__input_name"  name="Name" value="Mika Grig" type="text">
+                <input class="popup__input popup__input_job"  name="Job" value="Photographer and web-developer"  type="text">
+                <button class="popup__btn" value="Save" type="submit">Save</button>
             </form>
       </section>
 
@@ -50,10 +50,10 @@
       <section class="popup popup_add-new-card">
            <form class="popup__form popup__form_add-new-card" action="#" name="card-edit">
               <button class="popup__close-icon popup__close-icon_add-new" type="button"></button>
-              <h3 class="popup__title">Новое место</h3>
-              <input class="popup__input popup__input_title" placeholder="Название" name="title" type="text">
-              <input class="popup__input popup__input_url" placeholder="Ссылка на картинку"  name="url" type="text">
-              <button class="popup__btn" type="submit" value="Создать">Создать</button>
+              <h3 class="popup__title">new photo</h3>
+              <input class="popup__input popup__input_title" placeholder="Name" name="title" type="text">
+              <input class="popup__input popup__input_url" placeholder="Picture link"  name="url" type="text">
+              <button class="popup__btn" type="submit" value="Create">Create</button>
           </form>
       </section>
 
@@ -62,7 +62,7 @@
       <section class="popup popup__full">
         <div class="popup__form popup__form-full">
           <button type="button" class="popup__close-icon popup__close-icon__full-image-close"></button>
-          <img class="popup__full-image" alt="увеличенная картинка">
+          <img class="popup__full-image" alt="enlarged picture">
           <h3 class="popup__title popup__title__full-title"></h3>
         </div>
       </section>
@@ -72,7 +72,7 @@
       <template id="template-card">
         <div class="cards__element">
           <button class="cards__delete-button" type="button"></button>
-          <img class="cards__img" alt="загруженная картинка, которая может не отоброжаться из-за размера">
+          <img class="cards__img" alt="">
           <div class="cards__container">
             <h3 class="cards__title"></h3>
             <button class="cards__hearth-button" type="button"></button>

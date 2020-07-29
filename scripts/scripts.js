@@ -1,27 +1,31 @@
 const initialCards = [
   {
-      name: 'Архыз',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
+      name: 'Looking for light',
+      link: 'https://4.downloader.disk.yandex.ru/preview/75b69ab5cedd260abb97eb8a82601eee4142ffbd86ee6fe677bc1a170fef21c0/inf/3rAgw_2G4vjOywVDq8uAi95CgFs1N8miJnsVySeM_GyCJmMwpbdZYkibncBAyXpvzAXw4VqCdpK_ijIj3xAMPQ%3D%3D?uid=1051192678&filename=first.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1051192678&tknv=v2&size=1301x656'
   },
   {
-      name: 'Челябинская область',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+      name: 'Winter kiss',
+      link: 'https://drscdn.500px.org/photo/244369347/m%3D900/v2?sig=e9c75222b099f8232784148240e0a050d716fd0a19460ff3254dc3e3dc27d4e9'
   },
   {
-      name: 'Иваново',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+      name: 'Tired and lay down',
+      link: 'https://drscdn.500px.org/photo/231337729/m%3D900/v2?sig=13a8177959bebab0c672dd932927d051da742d7560c7760a7dba7a5546a6a544'
   },
   {
-      name: 'Камчатка',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+      name: 'The Pyrenees',
+      link: 'https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/59841988_621668038244457_7044709692244754432_n.jpg?_nc_cat=108&_nc_sid=0be424&_nc_ohc=oqu1_r8_5-kAX_tyi0P&_nc_ht=scontent-arn2-2.xx&oh=09f568d15a68f7c552789df7e324e05b&oe=5F449A6F'
   },
   {
-      name: 'Холмогорский район',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+      name: 'Passionate dance',
+      link: 'https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/59773514_621666431577951_8471555827214319616_n.jpg?_nc_cat=104&_nc_sid=0be424&_nc_ohc=tUDauoQggXsAX82RWg0&_nc_ht=scontent-arn2-1.xx&oh=37834ca2c41897d3d83ff86c73e7453b&oe=5F4489C3'
   },
   {
-      name: 'Байкал',
-      link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+    name: 'My love',
+    link: 'https://2.downloader.disk.yandex.ru/preview/31e8f7b0bf8f736bb24a311e18d7c2d32e0e10b449b60fa65ef0897a4c1eee5f/inf/H3dHZLh3A7g6ApywePKCrShGPvdqnF-3R8C7WPrSY8LH-Gp-zqmGH8bjPuwW--wxJKEZKzuANq-iC40lKWnLHg==?uid=1051192678&filename=61542196_2347251561999297_2596253613844070400_n.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&owner_uid=1051192678&size=1301x656'
+},
+  {
+      name: 'Armenian mountains with some clothes',
+      link: 'https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/59730715_621666404911287_1510945369901498368_n.jpg?_nc_cat=100&_nc_sid=0be424&_nc_ohc=7k9aqAC6vzcAX8FGFQs&_nc_ht=scontent-arn2-2.xx&oh=b8e2b812352ffab471a42f6000909a94&oe=5F454585'
   }
 ];
 
@@ -53,8 +57,7 @@ popupCloseButton.addEventListener('click', closePopup);
 function formSubmitHandler (evt) {
 	evt.preventDefault();
 
-	nameInput.value;
-	jobInput.value;
+
 
 	firstname.textContent = nameInput.value;
 	secondname.textContent = jobInput.value;
