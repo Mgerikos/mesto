@@ -1,7 +1,7 @@
 const initialCards = [
   {
       name: 'Winter kiss',
-      link: 'https://4.downloader.disk.yandex.ru/preview/26d3619146203813e1231fe17d7c0b652c71248c24ce0079f5dbf12ee616ac40/inf/_QsBwihGJG6RWaU5kBhg6Q-bXwHmevvSl1bZ5_Si2I4P7SSW__roV8_9fCfk76tplL0hGp5DIvRtgHPhVQMRtw%3D%3D?uid=1051192678&filename=e.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1051192678&tknv=v2&size=1301x656'
+      link: 'https://drscdn.500px.org/photo/1019942334/m%3D900/v2?sig=08cf7014d13ee4c4f083a2d7e92311466d38801ead66339ecfee80ba8aef2327'
   },
   {
       name: 'Tired and lay down',
@@ -9,15 +9,15 @@ const initialCards = [
   },
   {
       name: 'The harvest time',
-      link: 'https://4.downloader.disk.yandex.ru/preview/d8701b14a9b3f22164b8f4966f9d81016c670ef4efa13a54a48e6489fe7aeffe/inf/yqYXslcQycgVceo2NISE0cGnc_JOt2WpoCFO89e1C3dq2PHwKRx48RBdRir4ulQMgXQ6McT6BNZuliXTFLRNCg%3D%3D?uid=1051192678&filename=tati1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1051192678&tknv=v2&size=1301x656'
+      link: 'https://drscdn.500px.org/photo/1019942336/m%3D900/v2?sig=f5a2b0b96250f157808810ce5b3002622b787d3ec116b993ee8a853d335eb6cf'
   },
   {
       name: 'Passionate dance',
-      link: 'https://1.downloader.disk.yandex.ru/preview/b27f3bbb3ad0b4deac1c93a82218dfef8e3d25f2a95a8d2e1e5189c7a6f9e5cb/inf/sIb2_DC43fj1o2bP4qmT6ctPWBngc3nzAMWSAsRUItm1ld_2BAi94LTZNMNcvKsBSfbVy2PPh-Ca7ZFdG5KeBA%3D%3D?uid=1051192678&filename=Без%20имени-1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1051192678&tknv=v2&size=1301x656'
+      link: 'https://drscdn.500px.org/photo/1019942335/m%3D900/v2?sig=81e35631d855007b9f96842169c3e291d7da275b0bbff62db87d7a7f97b19c87'
   },
   {
     name: 'My love',
-    link: 'https://1.downloader.disk.yandex.ru/preview/9daa09aa7c2714fceceea92526cb879c978b0fa9680cb66cbec0bdf7aef9847d/inf/cC_K_pzsyqsVA4c910M3HqFcfb5DdcpdsPHjksoPpLpteTC8aY14R6X63Hb2HOGtA62pKptbZo-7AmX2bqf_yg%3D%3D?uid=1051192678&filename=Armine1.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1051192678&tknv=v2&size=1301x656'
+    link: 'https://drscdn.500px.org/photo/1019942224/m%3D900/v2?sig=8e1bc6668f9a3668fd37d47af5796de68cedd811ab7e5726397f469e6c19ba3b'
 },
   {
       name: 'Armenian mountains with some clothes',
