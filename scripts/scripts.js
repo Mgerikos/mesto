@@ -41,7 +41,7 @@ const addCardButton = document.querySelector('.profile__add-btn');
 const addCardCloseIcon = popupAddCard.querySelector('.popup__close-icon');
 const titleInput = formAddCard.querySelector('.popup__input_type_title');
 const urlInput = formAddCard.querySelector('.popup__input_type_url');
-const buttonElementAddCard = document.querySelector('.popup__btn');
+const buttonElementAddCard = document.querySelector('.popup__submit');
 
 function openPopup(popup) {
 	popup.classList.add('popup_opened');
