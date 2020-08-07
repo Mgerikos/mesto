@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,35 +35,43 @@
         <p class="footer__text">© 2020 Mesto Russia</p>
       </footer>
 
-
       <section class="popup popup_edit-profile">
-            <form class="popup__form" action="#" name="profile-edit">
-                <button class="popup__close-icon" type="button"></button>
-                <h3 class="popup__title">Edit Profile</h3>
-                <input class="popup__input popup__input_name"  name="Name" value="Mika Grig" type="text">
-                <input class="popup__input popup__input_job"  name="Job" value="Photographer and web-developer"  type="text">
-                <button class="popup__btn" value="Save" type="submit">Save</button>
-            </form>
+        <div class="popup__container">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__title">Edit Profile</h3>
+          <form class="popup__form" novalidate>
+            <fieldset class="popup__form-set">
+              <input type="text" name="name"  placeholder="Name" class="popup__input popup__input_type_name" id="name-input" minlength="2" maxlength="40" autocomplete="off" required >
+              <span class='popup__input-error' id='name-input-error'>xers</span>
+              <input type="text" name="job"  placeholder="Job description" class="popup__input popup__input_type_job" id="job-input" minlength="2" maxlength="200" autocomplete="off" required>
+              <span class="popup__input-error" id="job-input-error"></span>
+              <input type="submit" value="save" class="popup__submit">
+            </fieldset>
+          </form>
+        </div>
       </section>
-
 
       <section class="popup popup_add-new-card">
-           <form class="popup__form popup__form_add-new-card" action="#" name="card-edit">
-              <button class="popup__close-icon popup__close-icon_add-new" type="button"></button>
-              <h3 class="popup__title">new photo</h3>
-              <input class="popup__input popup__input_title" placeholder="Name" name="title" type="text">
-              <input class="popup__input popup__input_url" placeholder="Picture link"  name="url" type="text">
-              <button class="popup__btn" type="submit" value="Create">Create</button>
+        <div class="popup__container">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__title">New place</h3>
+          <form class="popup__form popup__form_new-card" novalidate>
+            <fieldset class="popup__form-set">
+              <input type="text" name="title" placeholder="Name" class="popup__input popup__input_type_title" id="title-input" minlength="1" maxlength="30" autocomplete="off" required>
+              <span class="popup__input-error" id="title-input-error"></span>
+              <input type="url" name="link" placeholder="link" class="popup__input popup__input_type_url" id="url-input" autocomplete="off" required>
+              <span class="popup__input-error" id="url-input-error"></span>
+              <input type="submit" value="Create" class="popup__submit">
+            </fieldset>
           </form>
+        </div>
       </section>
 
-
-
-      <section class="popup popup__full">
-        <div class="popup__form popup__form-full">
-          <button type="button" class="popup__close-icon popup__close-icon__full-image-close"></button>
-          <img class="popup__full-image" alt="enlarged picture">
-          <h3 class="popup__title popup__title__full-title"></h3>
+      <section class="popup popup_type_full-pic">
+        <div class="popup__container popup__container_type_full-pic">
+          <img class="popup__full-pic" alt="">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__title popup__title_type_full-pic"></h3>
         </div>
       </section>
 
@@ -80,6 +88,10 @@
         </div>
        </template>
 
+
+
+
       <script src="./scripts/scripts.js"></script>
+      <script src="./scripts/validate.js"></script>
   </body>
 </html>
