@@ -39,13 +39,15 @@
         <div class="popup__container">
           <button type="button" class="popup__close-icon"></button>
           <h3 class="popup__title">Edit Profile</h3>
-          <form class="popup__form" novalidate>
+          <form class="popup__form" action="#" novalidate>
             <fieldset class="popup__form-set">
-              <input type="text" name="name"  placeholder="Name" class="popup__input popup__input_type_name" id="name-input" minlength="2" maxlength="40" autocomplete="off" required >
-              <span class='popup__input-error' id='name-input-error'></span>
-              <input type="text" name="job"  placeholder="Job description" class="popup__input popup__input_type_job" id="job-input" minlength="2" maxlength="200" autocomplete="off" required>
-              <span class="popup__input-error" id="job-input-error"></span>
-              <input type="submit" value="save" class="popup__submit">
+              <input type="text" name="name" value="Mika Grig" placeholder="Name"
+              class="popup__input popup__input_type_name" minlength="2" maxlength="40" autocomplete="off" required >
+              <span class="popup__input-error" id="name-error"></span>
+              <input type="text" name="job" value="photographer and web-developer" placeholder="description"
+              class="popup__input popup__input_type_job" minlength="2" maxlength="200" autocomplete="off" required>
+              <span class="popup__input-error" id="job-error"></span>
+              <button type="submit" class="popup__submit">save</button>
             </fieldset>
           </form>
         </div>
@@ -55,13 +57,13 @@
         <div class="popup__container">
           <button type="button" class="popup__close-icon"></button>
           <h3 class="popup__title">New place</h3>
-          <form class="popup__form popup__form_new-card" novalidate>
+          <form class="popup__form" action="#" novalidate>
             <fieldset class="popup__form-set">
-              <input type="text" name="title" placeholder="Name" class="popup__input popup__input_type_title" id="title-input" minlength="1" maxlength="30" autocomplete="off" required>
-              <span class="popup__input-error" id="title-input-error"></span>
-              <input type="url" name="link" placeholder="link" class="popup__input popup__input_type_url" id="url-input" autocomplete="off" required>
-              <span class="popup__input-error" id="url-input-error"></span>
-              <input type="submit" value="Create" class="popup__submit">
+              <input type="text" name="title" value="" placeholder="Name" class="popup__input popup__input_type_title" minlength="1" maxlength="30" autocomplete="off" required>
+              <span class="popup__input-error" id="title-error"></span>
+              <input type="url" name="url" value="" placeholder="link" class="popup__input popup__input_type_url" autocomplete="off" required>
+              <span class="popup__input-error" id="url-error"></span>
+              <button type="submit" class="popup__submit popup__submit_disabled" disabled>create</button>
             </fieldset>
           </form>
         </div>
@@ -69,7 +71,7 @@
 
       <section class="popup popup_type_full-pic">
         <div class="popup__container popup__container_type_full-pic">
-          <img class="popup__full-pic" alt="">
+          <img class="popup__full-pic" alt="" src="">
           <button type="button" class="popup__close-icon"></button>
           <h3 class="popup__title popup__title_type_full-pic"></h3>
         </div>
@@ -77,10 +79,10 @@
 
 
 
-      <template id="template-card">
+      <template class="template-card">
         <div class="cards__element">
           <button class="cards__delete-button" type="button"></button>
-          <img class="cards__img" alt="">
+          <img class="cards__img" alt="" src="">
           <div class="cards__container">
             <h3 class="cards__title"></h3>
             <button class="cards__hearth-button" type="button"></button>
@@ -91,7 +93,7 @@
 
 
 
-      <script src="./scripts/scripts.js"></script>
+      <script src="./scripts/index.js"></script>
       <script src="./scripts/validate.js"></script>
   </body>
 </html>

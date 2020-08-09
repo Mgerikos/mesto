@@ -10,6 +10,7 @@
 @import url(./__title/popup__title.css);
 @import url(./__title/_type/popup__title_type_full-pic.css);
 @import url(./__full-pic/popup_type_full-pic.css);
+@import url(./__submit/_disabled/popup__submit_disabled.css);
 
 
 
