@@ -17,7 +17,7 @@
           <img class="profile__avatar" src="./images/me.jpg" alt="аватарка">
           <div class="profile__info">
             <div class="profile__caption">
-              <h1 class="profile__name">Mika Grig</h1>
+              <h1 class="profile__name">Mger Grigoryan</h1>
               <button class="profile__edit-btn" value="edit-btn" type="button"></button>
             </div>
               <p class="profile__job">Photographer and web-developer</p>
@@ -42,11 +42,11 @@
           <form class="popup__form" action="#" novalidate>
             <fieldset class="popup__form-set">
               <input type="text" name="name" value="Mika Grig" placeholder="Name"
-              class="popup__input popup__input_type_name" minlength="2" maxlength="40" autocomplete="off" required >
-              <span class="popup__input-error" id="name-error"></span>
+              class="popup__input popup__input_type_name" minlength="2" maxlength="40" autocomplete="off" required>
+              <span class="popup__error" id="name-error"></span>
               <input type="text" name="job" value="photographer and web-developer" placeholder="description"
               class="popup__input popup__input_type_job" minlength="2" maxlength="200" autocomplete="off" required>
-              <span class="popup__input-error" id="job-error"></span>
+              <span class="popup__error" id="job-error"></span>
               <button type="submit" class="popup__submit">save</button>
             </fieldset>
           </form>
@@ -60,9 +60,9 @@
           <form class="popup__form" action="#" novalidate>
             <fieldset class="popup__form-set">
               <input type="text" name="title" value="" placeholder="Name" class="popup__input popup__input_type_title" minlength="1" maxlength="30" autocomplete="off" required>
-              <span class="popup__input-error" id="title-error"></span>
+              <span class="popup__error" id="title-error"></span>
               <input type="url" name="url" value="" placeholder="link" class="popup__input popup__input_type_url" autocomplete="off" required>
-              <span class="popup__input-error" id="url-error"></span>
+              <span class="popup__error" id="url-error"></span>
               <button type="submit" class="popup__submit popup__submit_disabled" disabled>create</button>
             </fieldset>
           </form>
