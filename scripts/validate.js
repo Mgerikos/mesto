@@ -7,22 +7,15 @@ const formArrValidate = {
 }
 
 
-
-//функция для валидации
 const enableValidation = (formItem) => {
   const arrayForms = Array.from(document.querySelectorAll(formItem.formSelector));
   arrayForms.forEach((formElement) => {
     preventDefaultForm(formElement)
-    //облась с импутами
     const formInputs = Array.from(formElement.querySelectorAll(formItem.inputSelector));
-    //кнопки сохранить
     const buttonSubmit = formElement.querySelector(formItem.submitBtnSelector);
-    //перебор всех инпутов
     formInputs.forEach((inputElement) => {
       inputElement.addEventListener('input', () => {
-        //ошибка
         const errorElement = formElement.querySelector(`#${inputElement.name}-error`);
-        //проверка на валидность
         const isFormInvalid = formInputs.some((inputElement) => !inputElement.validity.valid);
         checkValidInput(inputElement, errorElement);
         toggleBtn(isFormInvalid, buttonSubmit);
@@ -32,13 +25,11 @@ const enableValidation = (formItem) => {
 };
 
 
-//функция сброса стандартного поведения сабмита
 function preventDefaultForm(elements) {
   elements.addEventListener('submit', (evt) => {
     evt.preventDefault();
   })
 };
-//удаление ошибок в формах
 function resetForms(form) {
   const arrForm = form.querySelectorAll(formArrValidate.inputSelector);
   arrForm.forEach((el) => {
@@ -46,13 +37,12 @@ function resetForms(form) {
     hideError(el, errorEl);
   })
 }
-//возвращение формы
 function hideError(el, errorEl) {
   el.classList.remove(formArrValidate.inputInvalidClass);
   errorEl.textContent = '';
 }
 
-//функция проверки формы на валидность
+
 function checkValidInput(element, error) {
   if (!element.validity.valid) {
     element.classList.add(formArrValidate.inputInvalidClass);
@@ -72,7 +62,7 @@ function inactiveBtn(btn) {
   btn.disabled = true;
 }
 
-//функция проверки кнопки
+
 function toggleBtn(invalid, button) {
   if (invalid) {
     button.classList.add(formArrValidate.inactiveBtnClass);

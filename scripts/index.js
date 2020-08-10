@@ -78,10 +78,12 @@ const popupOverlays = document.querySelectorAll('.popup');
 //Creating Cards
 const createCard = (data) => {
   const cardElement = cardTemplate.cloneNode(true);
+  const cardImage = cardElement.querySelector('.cards__img');
+  const cardTitle = cardElement.querySelector('.cards__title');
 
-  cardElement.querySelector('.cards__title').textContent = data.name;
-  cardElement.querySelector('.cards__img').src = data.link;
-  cardElement.querySelector('.cards__img').alt = data.name;
+  cardTitle.textContent = data.name;
+  cardImage.src = data.link;
+  cardImage.alt = data.name;
 
   cardElement.querySelector('.cards__delete-button').addEventListener('click', function (evt) {
     evt.target.closest('.cards__element').remove();
@@ -89,7 +91,7 @@ const createCard = (data) => {
   cardElement.querySelector('.cards__hearth-button').addEventListener('click', function (evt) {
     evt.target.classList.toggle('cards__hearth-button_active');
   });
-  cardElement.querySelector('.cards__img').addEventListener('click', function (evt) {
+  cardImage.addEventListener('click', function (evt) {
     handlePreviewPhoto(data.name, data.link);
   });
 
@@ -191,5 +193,3 @@ popupOverlays.forEach((popupElement) => {
     };
   })
 });
-
-
