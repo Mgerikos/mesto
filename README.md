@@ -1,4 +1,4 @@
-# Project 4: Mesto
+# Project 4: Edit-profile
 
 * A project for Yandex-praktikum, where you can create a creative page for yourself and add photos with descriptions, ideal for photographers, travelers and for everyone who loves to photograph.
 
