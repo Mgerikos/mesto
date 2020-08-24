@@ -11,7 +11,7 @@
 
 * [Figma URL](https://www.figma.com/file/StZjf8HnoeLdiXS7dYrLAh/JavaScript.-Sprint-4)
 
-* [Project URL](https://mgerikos.github.io/mesto/)
+* [Project URL](https://mgerikos.github.io/Edit-profile/)
 
 
 
