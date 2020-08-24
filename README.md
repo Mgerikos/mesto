@@ -1,6 +1,6 @@
 # Project 4: Mesto
 
-* A project for Yandex, where you can create a creative page for yourself and add photos with descriptions, ideal for photographers, travelers and for everyone who loves to photograph.
+* A project for Yandex-praktikum, where you can create a creative page for yourself and add photos with descriptions, ideal for photographers, travelers and for everyone who loves to photograph.
 
 * Technologies used:
   1. HTML5; CSS3; JS.
