@@ -25,7 +25,7 @@ export class Card {
   }
 
   getView() {
-    this._view = this._cardTemplate.content.children[0].cloneNode(true);;
+    this._view = this._cardTemplate.content.children[0].cloneNode(true);
     const text = this._view.querySelector('.cards__title');
     const image = this._view.querySelector('.cards__img');
     const deleteBtn = this._view.querySelector('.cards__delete-button');
