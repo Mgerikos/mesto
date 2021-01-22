@@ -1,6 +1,6 @@
 # Project 4: Edit-profile
 
-* A project from Yandex-praktikum, where you can create a creative page for yourself and add photos with descriptions, ideal for photographers, travelers and for everyone who loves to take photos.
+* A project for Yandex-praktikum, where you can create a creative page for yourself and add photos with descriptions, ideal for photographers, travelers and for everyone who loves to take photos.
 
 * Technologies used:
   1. HTML5; CSS3; JS.
