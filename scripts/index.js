@@ -27,7 +27,7 @@ const initialCards = [
 },
   {
       name: 'Armenian mountains with some clothes',
-      link: 'https://scontent-arn2-2.xx.fbcdn.net/v/t1.0-9/59730715_621666404911287_1510945369901498368_n.jpg?_nc_cat=100&_nc_sid=0be424&_nc_ohc=7k9aqAC6vzcAX8FGFQs&_nc_ht=scontent-arn2-2.xx&oh=b8e2b812352ffab471a42f6000909a94&oe=5F454585'
+      link: 'https://drscdn.500px.org/photo/231338159/m%3D900/v2?sig=582bad932c4fd450c3418e8ba7297280bfa5586213ac9558f1abdc95f9217b10'
   }
 ];
 
