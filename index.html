@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pages/index.css">
-    <title>Mesto</title>
+    <title>EDIT PROFILE</title>
   </head>
   <body class="page">
       <header class="header">
-         <img class="header__logo" src="./images/Vector.svg" alt="логотип">
+         <img class="header__logo" src="./images/logo2.png" alt="logo">
       </header>
 
       <main class="content">
 
         <section class="profile">
-          <img class="profile__avatar" src="./images/jan.jpg" alt="аватарка">
+          <img class="profile__avatar" src="./images/me.jpg" alt="аватарка">
           <div class="profile__info">
             <div class="profile__caption">
-              <h1 class="profile__name">Жак-Ив Кусто</h1>
+              <h1 class="profile__name">Mger Grigoryan</h1>
               <button class="profile__edit-btn" value="edit-btn" type="button"></button>
             </div>
-              <p class="profile__job">Исследователь океана</p>
+              <p class="profile__job">Photographer and web-developer</p>
           </div>
               <button class="profile__add-btn" value="add-btn" type="button"></button>
        </section>
@@ -32,47 +32,57 @@
       </main>
 
       <footer class="footer">
-        <p class="footer__text">© 2020 Mesto Russia</p>
+        <p class="footer__text">© 2020 Mika Grig</p>
       </footer>
 
-
       <section class="popup popup_edit-profile">
-            <form class="popup__form" action="#" name="profile-edit">
-                <button class="popup__close-icon" type="button"></button>
-                <h3 class="popup__title">Редактирование профиля</h3>
-                <input class="popup__input popup__input_name"  name="Name" value="Жак-Ив Кусто" type="text">
-                <input class="popup__input popup__input_job"  name="Job" value="Исследователь океана"  type="text">
-                <button class="popup__btn" value="Сохранить" type="submit">Сохранить</button>
-            </form>
+        <div class="popup__container">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__title">Edit Profile</h3>
+          <form class="popup__form" action="#" novalidate>
+            <fieldset class="popup__form-set">
+              <input type="text" name="name" value="Mika Grig" placeholder="Name"
+              class="popup__input popup__input_type_name" minlength="2" maxlength="40" autocomplete="off" required>
+              <span class="popup__error" id="name-error"></span>
+              <input type="text" name="job" value="photographer and web-developer" placeholder="description"
+              class="popup__input popup__input_type_job" minlength="2" maxlength="200" autocomplete="off" required>
+              <span class="popup__error" id="job-error"></span>
+              <button type="submit" class="popup__submit">save</button>
+            </fieldset>
+          </form>
+        </div>
       </section>
-
 
       <section class="popup popup_add-new-card">
-           <form class="popup__form popup__form_add-new-card" action="#" name="card-edit">
-              <button class="popup__close-icon popup__close-icon_add-new" type="button"></button>
-              <h3 class="popup__title">Новое место</h3>
-              <input class="popup__input popup__input_title" placeholder="Название" name="title" type="text">
-              <input class="popup__input popup__input_url" placeholder="Ссылка на картинку"  name="url" type="text">
-              <button class="popup__btn" type="submit" value="Создать">Создать</button>
+        <div class="popup__container">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__title">New place</h3>
+          <form class="popup__form" action="#" novalidate>
+            <fieldset class="popup__form-set">
+              <input type="text" name="title" value="" placeholder="Name" class="popup__input popup__input_type_title" minlength="1" maxlength="30" autocomplete="off" required>
+              <span class="popup__error" id="title-error"></span>
+              <input type="url" name="url" value="" placeholder="link" class="popup__input popup__input_type_url" autocomplete="off" required>
+              <span class="popup__error" id="url-error"></span>
+              <button type="submit" class="popup__submit popup__submit_disabled" disabled>create</button>
+            </fieldset>
           </form>
+        </div>
       </section>
 
-
-
-      <section class="popup popup__full">
-        <div class="popup__form popup__form-full">
-          <button type="button" class="popup__close-icon popup__close-icon__full-image-close"></button>
-          <img class="popup__full-image" alt="увеличенная картинка">
-          <h3 class="popup__title popup__title__full-title"></h3>
+      <section class="popup popup_type_full-pic">
+        <div class="popup__container popup__container_type_full-pic">
+          <img class="popup__full-pic" alt="" src="">
+          <button type="button" class="popup__close-icon"></button>
+          <h3 class="popup__title popup__title_type_full-pic"></h3>
         </div>
       </section>
 
 
 
-      <template id="template-card">
+      <template class="template-card">
         <div class="cards__element">
           <button class="cards__delete-button" type="button"></button>
-          <img class="cards__img" alt="загруженная картинка, которая может не отоброжаться из-за размера">
+          <img class="cards__img" alt="" src="">
           <div class="cards__container">
             <h3 class="cards__title"></h3>
             <button class="cards__hearth-button" type="button"></button>
@@ -80,6 +90,7 @@
         </div>
        </template>
 
-      <script src="./scripts/scripts.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+
   </body>
 </html>

@@ -1,21 +1,16 @@
 .popup__close-icon {
   background-image: url(../../../images/Close\ Icon.svg);
-  width: 58px;
-  height: 58px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  left: 414px;
-  top: -45px;
+  position: absolute;
+  width: 42px;
+	height: 42px;
+	background-size: 42px 42px;
+	background-repeat: no-repeat;
+  top: -32px;
+  right: -32px;
+  border: none;
+  outline: none;
+  background-color: unset;
+
 }
 
 .popup__close-icon:hover {
@@ -26,29 +21,9 @@
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+          cursor: pointer;
 }
 
 
-
-
-
-@media screen and (min-width: 426px) and (max-width: 500px) {
-  .popup__close-icon {
-      width: 50px;
-      height:50px;
-      left: 275px;
-      top: -45px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 426px) {
-  .popup__close-icon {
-      width: 35px;
-      height: 35px;
-      left: 240px;
-      top: -40px;
-   }
-
-}
 
 
