@@ -1,9 +1,9 @@
-.cards__page {
+.page__cards {
   margin: 36px auto 0;
 }
 
 @media screen and (min-width: 1280px) {
-  .cards__page {
+  .page__cards {
       margin-top: 51px;
   }
 }
