@@ -1,0 +1,16 @@
+.page__container {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-top: 28px;
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (min-width: 1024px) {
+  .page__container {
+      padding-top: 45px;
+  }
+}

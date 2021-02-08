@@ -1,0 +1,18 @@
+.popup__title {
+  margin: 25px auto 75px;
+  width: calc(100% - (2*22px));
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: calc(21.78/18);
+}
+
+@media screen and (min-width: 768px) {
+  .popup__title {
+    width: calc(100% - (2*36px));
+    font-size: 24px;
+    line-height: calc(29.05/24);
+    margin-top: 34px;
+    margin-bottom: 43px;
+  }
+}

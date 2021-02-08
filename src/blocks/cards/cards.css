@@ -1,0 +1,29 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
+  row-gap: 22px;
+  max-width: calc(100% - (2*19px));
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cards {
+      max-width: calc(100% - (2*50px));
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+      max-width: calc(100% - (2*100px));
+
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cards {
+      max-width: calc(100% - (2*200px));
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
