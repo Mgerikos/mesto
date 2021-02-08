@@ -6,7 +6,7 @@
 
 =======
 * A project from Yandex-praktikum, where you can create a creative page for yourself and add photos with descriptions, ideal for photographers, travelers and for everyone who loves to take photos.
->>>>>>> c987991e833ecb5698bebdc7afe25bbc96d0e537
+
 
 * Technologies used:
   1. HTML5; CSS3; JS.
