@@ -3,39 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="edit-profile">
+  <meta name="description" content="Edit-profile">
   <meta name="author" content="Mger Grigoryan">
-  <title>Edit-Profile</title>
+  <title>Edit-profile</title>
 </head>
 <body class="page">
   <div class="page__container">
+
     <header class="header page__header">
       <div class="header__logo">
-        <img class="logo" src="<%=require('./images/logo2.png')%>" alt="Logo">
+        <img class="logo" src="<%=require('./images/logo2.png')%>" alt="logo">
       </div>
     </header>
+
     <main class="content">
 
       <section class="profile page__profile">
-        <img class="profile__avatar" src="<%=require('./images/me.jpg')%>" alt="Avatar">
+        <div class="profile__image">
+          <img class="profile__avatar" src="#" alt="Avatar">
+          <button class="profile__edit-avatar" type="button"></button>
+        </div>
         <div class="profile__info">
-          <h1 class="profile__name">Mger Grigoryan</h1>
+          <h1 class="profile__name" id="name"></h1>
           <button class="profile__edit-button" type="button"></button>
-          <p class="profile__job">Photographer and web-developer</p>
+          <p class="profile__job"></p>
         </div>
         <button class="profile__add-button" type="button">
           <img class="button button_add" src="<%=require('./images/add-vector.svg')%>" alt="add button">
         </button>
       </section>
 
-      <section class="cards page__cards">
-
-      </section>
+      <section class="cards page__cards"></section>
 
     </main>
 
     <footer class="footer page__footer">
-      <p class="footer__copyright">© 2020 Mger Grigoryan</p>
+      <p class="footer__copyright">© 2020 Mika Grig</p>
     </footer>
 
   </div>
@@ -47,12 +50,12 @@
       </button>
       <h2 class="popup__title">edit profile</h2>
       <form class="popup__form popup__form_profile" name="popup__form" novalidate>
-        <label class ="popup__form-field">
+        <label class="popup__form-field">
           <input class="popup__input popup__input_type_name" id="name-input" type="text" name="name" required minlength="2" maxlength="40">
           <span class="popup__error" id="name-input-error"></span>
         </label>
-        <label class ="popup__form-field">
-          <input class="popup__input popup__input_type_job" id="job-input" type="text" name="job" required minlength="2" maxlength="200">
+        <label class="popup__form-field">
+          <input class="popup__input popup__input_type_job" id="job-input" type="text" name="about" required minlength="2" maxlength="200">
           <span class="popup__error" id="job-input-error"></span>
         </label>
         <button class="popup__button-submit" type="submit">save</button>
@@ -67,29 +70,55 @@
       </button>
       <h2 class="popup__title popup__title_cards">new place</h2>
       <form class="popup__form popup__form_cards" name="popup__form" novalidate>
-        <label class ="popup__form-field popup__form-field_cards">
+        <label class="popup__form-field popup__form-field_cards">
           <input class="popup__input popup__input_cards popup__input_type_title" id="title-input" type="text" name="name" placeholder="title" required minlength="2" maxlength="30">
           <span class="popup__error" id="title-input-error"></span>
         </label>
-        <label class ="popup__form-field popup__form-field_cards">
+        <label class="popup__form-field popup__form-field_cards">
           <input class="popup__input popup__input_cards popup__input_type_link" id="link-input" type="url" name="link" placeholder="image link" required>
           <span class="popup__error" id="link-input-error"></span>
         </label>
-        <button class="popup__button-submit popup__button-submit_cards" type="submit">create</button>
+        <button class="popup__button-submit popup__button-submit_cards" type="submit">save</button>
       </form>
     </div>
   </div>
 
-  <div class="popup popup_img">
-      <figure class="popup__container popup__container_image">
-        <button class="popup__button-close popup__button-close_image" type="button">
-          <img class="button button_close" src="<%=require('./images/Close-Icon.svg')%>" alt="close button">
-        </button>
-        <img class="popup__photo" src="#" alt="photo">
-        <figcaption class="popup__caption">
-          <h2 class="popup__title">photo name</h2>
-        </figcaption>
-      </figure>
+  <div class="popup popup_remove-card">
+    <div class="popup__container popup__container_remove-card">
+      <button class="popup__button-close" type="button">
+        <img class="button button_close" src="<%=require('./images/Close-Icon.svg')%>" alt="close button">
+      </button>
+      <h2 class="popup__title popup__title_remove-card">are you sure?</h2>
+      <button class="popup__button-confirm" type="button">yes</button>
+    </div>
+  </div>
+
+  <div class="popup popup_avatar">
+    <div class="popup__container popup__container_avatar">
+      <button class="popup__button-close" type="button">
+        <img class="button button_close" src="<%=require('./images/Close-Icon.svg')%>" alt="close button">
+      </button>
+      <h2 class="popup__title">update avatar</h2>
+      <form class="popup__form popup__form_avatar" name="popup__form" novalidate>
+        <label class="popup__form-field">
+          <input class="popup__input popup__input_type_link" id="link-photo-input" type="url" name="link" placeholder="put your image link"  required>
+          <span class="popup__error" id="link-photo-input-error"></span>
+        </label>
+        <button class="popup__button-submit" type="submit">save</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup_image">
+    <figure class="popup__container popup__container_image">
+      <button class="popup__button-close popup__button-close_image" type="button">
+        <img class="button button_close" src="<%=require('./images/Close-Icon.svg')%>" alt="close button">
+      </button>
+      <img class="popup__photo" src="#" alt="photo">
+      <figcaption class="popup__caption">
+        <h2 class="popup__title">title</h2>
+      </figcaption>
+    </figure>
   </div>
 
   <template class="card">
@@ -98,9 +127,13 @@
       <img class="card__photo" src="#" alt="photo">
       <figcaption class="card__caption">
         <h2 class="card__title"></h2>
-        <button class="card__like-button" type="button"></button>
+        <div class="card__like">
+          <button class="card__like-button" type="button"></button>
+          <h2 class="card__like-counter"></h2>
+        </div>
       </figcaption>
     </figure>
   </template>
+
 </body>
 </html>
